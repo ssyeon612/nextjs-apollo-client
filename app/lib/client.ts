@@ -5,7 +5,8 @@ export const { getClient } = registerApolloClient(() => {
   return new ApolloClient({
     cache: new InMemoryCache(),
     link: new HttpLink({
-      uri: "https://countries.trevorblades.com",
+      // uri: "https://countries.trevorblades.com",
+      uri: "http://192.168.0.75:8888/v1/graphql",
     }),
   });
 });
